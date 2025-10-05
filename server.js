@@ -4,7 +4,6 @@ const fs = require('fs')
 const home = fs.readFileSync('static/home.html', 'utf-8')
 const about = fs.readFileSync('static/about.html', 'utf-8')
 const contact = fs.readFileSync('static/contact.html', 'utf-8')
-// console.log('home', home)
 
 const server = http.createServer((req, res) => {
     if (req.url === '/home') {
